@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,600&display=swap&subset=cyrillic-ext);
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body, html {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_margin {
+  margin: 0px 0px 30px 0px;
+}
+
+.form-item {
+  margin: 0px 0px 30px 0px;
+}
+
+.form_label {
+  margin: 0px 0px 10px 0px;
+}
+
+.simple-raiting {
+  position: relative;
+  font-size: 40px;
+  display: inline-block;
+}
+.simple-raiting::before {
+  content: "★★★★★";
+  display: block;
+}
+
+.simple-raiting__items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.simple-raiting__item {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.simple-raiting__label {
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.simple-raiting__label::before {
+  content: "★";
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.simple-raiting__item:checked,
+.simple-raiting__item:checked ~ .simple-raiting__label {
+  color: orange;
+}
+
+.simple-raiting__label:hover,
+.simple-raiting__label:hover ~ .simple-raiting__label,
+.simple-raiting__label:checked ~ .simple-raiting__label:hover {
+  color: yellow;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1182px) {
+  .__container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .__container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .__container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+/* Large desktops and laptops */
+/* Landscape tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets, телефоны лопаты */
+/* Portrait phones and smaller типа моего 6s */
+/* Iphone 5 */

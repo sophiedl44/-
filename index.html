@@ -1,0 +1,39 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Шаблон</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Звездный рейтинг</h1>
+			<form action="#" class="form form_margin">
+				<div class="form-item">
+					<div class="form_label">Простой рейтинг (без JS)</div>
+					<div class="simple-raiting">
+						<div class="simple-raiting__items">
+							<input id="simple-raiting__5" type="radio" class="simple-raiting__item" name="simple-raiting" value="5">
+							<label for="simple-raiting__5" class="simple-raiting__label"></label>
+							<input id="simple-raiting__4" type="radio" class="simple-raiting__item" name="simple-raiting" value="4">
+							<label for="simple-raiting__4" class="simple-raiting__label"></label>
+							<input id="simple-raiting__3" type="radio" class="simple-raiting__item" checked name="simple-raiting" value="3">
+							<label for="simple-raiting__3" class="simple-raiting__label"></label>
+							<input id="simple-raiting__2" type="radio" class="simple-raiting__item" name="simple-raiting" value="2">
+							<label for="simple-raiting__2" class="simple-raiting__label"></label>
+							<input id="simple-raiting__1" type="radio" class="simple-raiting__item" name="simple-raiting" value="1">
+							<label for="simple-raiting__1" class="simple-raiting__label"></label>
+						</div>
+					</div>
+				</div>
+			</form>
+		<script src="js/script.js"></script>
+	</body>
+</html>
